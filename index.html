@@ -1,68 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shiki's Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-      color: #444;
-    }
-    p {
-      font-size: 1.2em;
-      margin-bottom: 30px;
-    }
-    form {
-      display: inline-block;
-      margin-top: 20px;
-    }
-    input[type="email"] {
-      padding: 10px;
-      font-size: 1em;
-      width: 250px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    input[type="submit"] {
-      padding: 10px 20px;
-      font-size: 1em;
-      border: none;
-      border-radius: 5px;
-      background-color: #1a73e8;
-      color: white;
-      cursor: pointer;
-      margin-left: 10px;
-    }
-    input[type="submit"]:hover {
-      background-color: #1669c1;
-    }
-    footer {
-      margin-top: 50px;
-      font-size: 0.9em;
-      color: #888;
-    }
-  </style>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Melqui Elioenai S. Amparo | Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Shiki's Portfolio</h1>
-  <p>Our site is currently under construction. Stay tuned!</p>
-  
-  <form action="#" method="post">
-    <input type="email" placeholder="Enter your email" required>
-    <input type="submit" value="Notify Me">
-  </form>
 
-  <footer>
-    &copy; 2025 White Celebration. All rights reserved.
-  </footer>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Melqui Elioenai S. Amparo</h1>
+<p class="subtitle">Educator · IT Specialist · Multimedia Creator · AI Hobbyist</p>
+<div class="hero-actions">
+<a href="#education" class="btn primary">Explore</a>
+<a href="#contact" class="btn ghost">Contact</a>
+</div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+<h2>Education & Teaching</h2>
+<div class="card">
+<h3>Senior High School ICT Teacher</h3>
+<span>Philippine Women’s University · 2023–2024</span>
+<p>ICT instruction, classroom management, multimedia and IT fundamentals.</p>
+</div>
+</section>
+
+
+<!-- IT -->
+<section class="section section-dark">
+<h2>IT & Technical Skills</h2>
+<div class="grid">
+<div class="card">Hardware & Network Troubleshooting</div>
+<div class="card">Python, C#, SQL Development</div>
+<div class="card">CCTV Operations & Monitoring</div>
+<div class="card">Technical Support Experience</div>
+</div>
+</section>
+
+
+<!-- MULTIMEDIA -->
+<section class="section">
+<h2>Multimedia</h2>
+<p class="muted">Video editing, photography, livestreaming, graphic design.</p>
+<div class="grid media-grid">
+<div class="placeholder">Image / Video Placeholder</div>
+<div class="placeholder">Image / Video Placeholder</div>
+<div class="placeholder">Image / Video Placeholder</div>
+</div>
+</section>
+
+
+<!-- AI -->
+<section class="section section-dark">
+<h2>AI & Projects</h2>
+<div class="card">
+<h3>Project NOX</h3>
+<p>Personal AI companion using Python, OpenAI, STT & TTS with real-time interaction.</p>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2>Contact</h2>
+<p class="muted">business.melquiamparo@gmail.com</p>
+<p class="muted">shiki@whitecelebration.site</p>
+</section>
+
+
+<footer>
+© <span id="year"></span> Melqui Elioenai S. Amparo · shiki.whitecelebration.site
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
 </body>
 </html>
