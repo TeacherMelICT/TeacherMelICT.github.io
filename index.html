@@ -1,90 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Melqui Elioenai S. Amparo | Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <title>White Celebration — Under Construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: radial-gradient(circle at top, #1e1e2f, #0e0e14);
+            color: #eaeaf0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 64px;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+        }
+
+        main {
+            max-width: 520px;
+            width: 100%;
+            padding: 32px 24px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 32px 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(8px);
+        }
+
+        .status {
+            font-size: 1.2rem;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input[type="email"] {
+            padding: 14px 16px;
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            background: rgba(0, 0, 0, 0.35);
+            color: #ffffff;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        input[type="email"]::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        input[type="email"]:focus {
+            border-color: #7aa2ff;
+            box-shadow: 0 0 0 2px rgba(122, 162, 255, 0.25);
+        }
+
+        button {
+            margin-top: 8px;
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            color: #0e0e14;
+            background: linear-gradient(135deg, #7aa2ff, #9f7aff);
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(122, 162, 255, 0.35);
+        }
+
+        .direct-email {
+            margin-top: 16px;
+            font-size: 0.85rem;
+            opacity: 0.7;
+        }
+
+        .direct-email a {
+            color: #9f7aff;
+            text-decoration: none;
+        }
+
+        .direct-email a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-bottom: 24px;
+            font-size: 0.75rem;
+            opacity: 0.5;
+        }
+    </style>
 </head>
 <body>
 
+<header>
+    White Celebration
+</header>
 
-<!-- HERO -->
-<section class="hero">
-<h1>Melqui Elioenai S. Amparo</h1>
-<p class="subtitle">Educator · IT Specialist · Multimedia Creator · AI Hobbyist</p>
-<div class="hero-actions">
-<a href="#education" class="btn primary">Explore</a>
-<a href="#contact" class="btn ghost">Contact</a>
-</div>
-</section>
+<main>
+    <div class="card">
+        <div class="status">
+            Under construction
+        </div>
 
+        <!--
+          Uses mailto: so it works without a backend.
+          Opens the user's email client with the message pre-filled.
+        -->
+        <form
+            action="mailto:shiki@whitecelebration.site"
+            method="post"
+            enctype="text/plain"
+        >
+            <input
+                type="email"
+                name="From"
+                placeholder="Your email address"
+                required
+            />
 
-<!-- EDUCATION -->
-<section id="education" class="section">
-<h2>Education & Teaching</h2>
-<div class="card">
-<h3>Senior High School ICT Teacher</h3>
-<span>Philippine Women’s University · 2023–2024</span>
-<p>ICT instruction, classroom management, multimedia and IT fundamentals.</p>
-</div>
-</section>
+            <input
+                type="hidden"
+                name="Subject"
+                value="Inquiry from White Celebration landing page"
+            />
 
+            <button type="submit">
+                Contact Us
+            </button>
+        </form>
 
-<!-- IT -->
-<section class="section section-dark">
-<h2>IT & Technical Skills</h2>
-<div class="grid">
-<div class="card">Hardware & Network Troubleshooting</div>
-<div class="card">Python, C#, SQL Development</div>
-<div class="card">CCTV Operations & Monitoring</div>
-<div class="card">Technical Support Experience</div>
-</div>
-</section>
-
-
-<!-- MULTIMEDIA -->
-<section class="section">
-<h2>Multimedia</h2>
-<p class="muted">Video editing, photography, livestreaming, graphic design.</p>
-<div class="grid media-grid">
-<div class="placeholder">Image / Video Placeholder</div>
-<div class="placeholder">Image / Video Placeholder</div>
-<div class="placeholder">Image / Video Placeholder</div>
-</div>
-</section>
-
-
-<!-- AI -->
-<section class="section section-dark">
-<h2>AI & Projects</h2>
-<div class="card">
-<h3>Project NOX</h3>
-<p>Personal AI companion using Python, OpenAI, STT & TTS with real-time interaction.</p>
-</div>
-</section>
-
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-<h2>Contact</h2>
-<p class="muted">business.melquiamparo@gmail.com</p>
-<p class="muted">shiki@whitecelebration.site</p>
-</section>
-
+        <div class="direct-email">
+            Or email us directly at
+            <a href="mailto:shiki@whitecelebration.site">
+                shiki@whitecelebration.site
+            </a>
+        </div>
+    </div>
+</main>
 
 <footer>
-© <span id="year"></span> Melqui Elioenai S. Amparo · shiki.whitecelebration.site
+    © 2026 White Celebration. All rights reserved.
 </footer>
-
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
-
 
 </body>
 </html>
